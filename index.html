@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kanban Board</title>
+    
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav class="toolbox">
+
+        <div class="toolbox-priority">
+
+            <!-- <div class="color pink"></div>
+            <div class="color blue"></div>
+            <div class="color violet"></div>
+            <div class="color green"></div> -->
+
+            <button class="color pink"></button>
+            <button class="color blue"></button>
+            <button class="color violet"></button>
+            <button class="color green"></button>
+
+        </div>
+
+        <div class="action-button">
+            <div class="add-btn">
+                <i class="fa fa-plus"></i>
+            </div>
+
+            <div class="remove-btn">
+                <i class="fa fa-trash"></i>
+            </div>
+        </div>
+    </nav>
+
+    <main class="main">
+        <div class="header">
+
+            <h2 class="pending">PENDING</h2>
+            <h2 class="finished">FINISHED</h2>
+
+        </div>
+
+        <div class="container-wrapper">
+
+            <div class="container pending-container">
+                
+                <!-- <div class="ticket-container">
+                    <div class="ticket-color"></div>
+                    <div class="ticket-id">#654654</div>
+                    <div class="ticket-area">Go to Gym</div>
+                    <div class="lock-unlock">
+                        <i class="fa fa-lock"></i>
+                        <i class="fa fa-unlock"></i>
+                    </div>
+                </div>  -->        
+            </div>
+
+            <div class="container finished-container">
+            </div>
+
+        </div>
+
+        <div class="modal-container">
+            <textarea name="task" placeholder="Enter Your Task" 
+            class="textarea-container"></textarea>
+            <div class="priority-color-container">
+                <div class="close">
+                    
+                </div>
+                <div class="priority-color pink"></div>
+                <div class="priority-color blue"></div>
+                <div class="priority-color violet"></div>
+                <div class="priority-color green"></div>
+            </div>
+        </div>
+        
+    </main>
+
+
+    <script src="app.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/short-unique-id@latest/dist/short-unique-id.min.js"></script>
+    
+</body>
+</html>
